@@ -1,0 +1,405 @@
+/* ========== Global Styles ========== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== Navbar Styling ========== */
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px 50px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+
+.logo {
+  text-align: center;
+  font-size: 24px;
+  background-color: #ccc;
+  width: 100px;
+  font-weight: bold;
+  margin-left: 80px;
+  /* Adjust this value as needed */
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  /* Logo से थोड़ा gap */
+  margin-left: 220px;
+  /* Logo के पास लाने के लिए */
+  margin-top: 10px;
+  /* इसे थोड़ा नीचे लाने के लिए */
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: rgba(25, 89, 172, 1);
+}
+
+.btn-signin {
+  background: whitesmoke;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  /* Add padding for a better look */
+  cursor: pointer;
+  width: 140px;
+  height: 40px;
+  margin-left: auto;
+  /* Automatically aligns the button to the right */
+  margin-right: 50px;
+  /* Adds some space from the right edge */
+  border-radius: 5px;
+  /* Optional: Adds rounded corners */
+}
+
+/* ========== Home Page Styling ========== */
+.home-section {
+  display: flex;
+  align-items: flex-start;
+  /* Align everything to the left */
+  justify-content: flex-start;
+  /* Ensure everything starts from the left */
+  height: 100vh;
+  padding: 100px 5%;
+}
+
+/* ========== Content Styling ========== */
+.home-text {
+  font-size: 24px;
+  color: black;
+  margin-left: 0;
+  /* Ensure text is left-aligned */
+  padding-left: 30px;
+}
+
+.home-text p {
+  color: black;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* ========== Input Styling ========== */
+.input-group {
+  display: flex;
+  margin-top: 10px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  /* Small space between input and button */
+}
+
+.input-group button {
+  background: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* ========== Image Styling ========== */
+.image-container {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  /* Align image to the left */
+}
+
+.bike-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#mid {
+  /* background-image: url('/superrider.jpg'); */
+  background-size: cover;
+  background-image: url('../public/superrider.jpg');
+  background-position: center;
+  background-color: white;
+  background-repeat: no-repeat;
+  height: 752px;
+  color: rgb(0, 0, 0, 1); /* Set text color */
+
+}
+
+#mid h1 {
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 170px;
+  font-size: 35px;
+}
+
+#mid p {
+  color: rgba(255, 255, 255, 1);
+  text-align: center;
+}
+
+#mid #logo{
+  
+    font-size: 24px;
+    background-color: rgba(219,219,219,1);
+    width: 100px;
+    text-align: center;
+    height: 35px;
+    font-weight: bold;
+    margin-left: 130px;
+    margin-top: 20px;
+    /* Adjust this value as needed */
+  
+}
+#hacker{
+  
+    /* background-image: url('/superrider.jpg'); */
+    background-size: cover;
+    background-image: url('../public/hacker.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 607px;
+    color: rgb(0,0,0,3);
+  }
+
+  
+  #hacker #logo {
+    font-size: 24px;
+    background-color: rgba(219,219,219,1);
+    width: 100px;
+    text-align: center;
+    height: 35px;
+    font-weight: bold;
+    margin-left: -33px;  /* Move logo 20px to the left */
+    margin-top: 20px;
+}
+#hacker p {
+ margin-top: 200px;
+  top: 169px;
+  left: 316px;
+ font-size: 40px;
+text-transform: capitalize;
+  line-height: 49.22px;
+  letter-spacing: -2%;
+  text-align: center;
+  color: rgb(255, 255, 255, 1); /* Set color to whitesmoke */
+}
+#bike {
+  width: 800px;
+  border-radius: 50px;
+  margin-left: 80px; /* Pushes the element to the right */
+  margin-right: 0; /* Ensures it is aligned to the right edge */
+}
+#bike{
+  background-color: whitesmoke;
+  padding: 20px;
+  width: 95%;
+}
+#partner h2 {
+  margin-left: 100px; /* Moves the heading to the right */
+}
+#partner p{
+  margin-left: 100px;
+}
+
+#partner h6 {
+  margin-top: 30px;
+  font-weight: bold; /* Makes the text bold */
+  margin-left: 130px;  /* Shifts the text to the right */
+  color: rgb(34, 34, 34); /* Sets the color */
+}
+h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 50px;
+  color: rgb(34,34,34,1);
+}
+#card{
+  margin-bottom: 100px;
+  margin-top: 30px;
+}
+#card span {
+  color: rgb(5, 70, 210);
+  font-size: 20px;
+  padding-left: 100px; /* Adjust this value to shift it more */
+}
+#card h4{
+  padding-left: 100px;
+  color: rgb(34,34,34,1);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+#card h6{
+  padding-left: 100px;
+  color: 0,0,0,1;
+}
+
+#form h3{
+  font-weight: 100px;
+  color :rgb(34,34,34,1);
+
+  
+}
+#form {
+  margin-bottom: 90px;
+}
+#hello {
+  background-color: rgb(243,243,243,1);
+}
+#hello span {
+  color: rgba(5, 70, 210,1);
+  padding-top: 30px;
+  font-size: 20px;
+  padding-left: 0px; /* Adjust this value to shift it more */
+}
+#hello h5{
+  padding-left: 0px;
+  padding-top: 20px;
+  color: rgba(0,0,0,1);
+  font-weight: 1000;  /* Increased font weight */
+}
+
+#hello p{
+  margin-top: 10px;
+  padding-left: 0px;
+  color: rgba(0,0,0,1);
+
+}
+
+#photo span {
+  color: rgba(71, 85, 105, 1);
+  padding-left: 50px;
+  display: inline-block; /* Ensures margin works */
+  margin-top: 50px; /* Adjust this value as needed */
+}
+
+#photo h4 {
+  padding-left: 50px;
+  color: rgba(15, 23, 42, 1); /* Corrected color format */
+  margin-top: 10px; /* Move the h4 element up */
+  font-weight: 1000;  /* Increased font weight */
+}
+
+#photo p {
+  font-weight: 1000;  /* Increased font weight */
+color: rgba(0,0,0,1);
+padding-left: 50px;
+}
+#frindship span{
+  color: rgba(5, 70, 210,1);
+  font-weight: 700;
+
+}
+#frindship h4{
+  text-transform: capitalize;
+  color: rgba(34,34,34,1);
+  padding-top: 10px;
+}
+#frindship p{
+  color: rgba(0,0,0,1);
+}
+#profile span {
+  color: rgba(255, 255, 255, 1);
+  padding-left: 100px;
+  font-weight: 700;
+  margin-top: 50px; /* Adjust this value as needed */
+}
+
+#profile h4{
+  color: rgba(255, 255, 255, 1);
+  padding-left: 90px;
+  margin: 10px;
+  font-weight: 700;
+}
+#profile h6{
+  color: rgba(255, 255, 255, 1);
+  padding-left: 90px;
+  margin: 10px;
+}
+#footer h2 {
+  text-align: center;
+  font-size: 28px; /* Increased font size */
+  background-color: #ccc;
+  width: 150px; /* Increased width */
+  font-weight: bold;
+  margin-left: -20px; /* Move it slightly left */
+  margin-top: 30px;
+  padding: 10px 0; /* Adds padding for better appearance */
+}
+
+#footer{
+  background-color:  rgba(23, 30, 43, 1);
+}
+#footer p{
+color: 
+rgba(255, 255, 255, 1);
+}
+
+#Lorem h4 {
+  text-align: center;
+  font-size: 28px; /* Increased font size */
+  background-color: #ccc;
+  width: 200px; /* Slightly increased width */
+  font-weight: bold;
+  margin: 190px auto; /* Increased top margin for more spacing */
+  padding: 12px 0; /* Adds padding for better appearance */
+  border-radius: 10px; /* Adds rounded corners */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+}
+#Lorem h5 {
+  color: rgba(34, 34, 34, 1);
+  margin-top: -170px; /* Moves it upwards */
+  text-align: center; /* Centers it under the logo */
+}
+#Lorem p{
+  color: rgba(34, 34, 34, 1);
+  text-align: center; /* Centers it under the logo */
+}
+#question {
+  margin-top: 100px;
+  background-color: rgba(251, 251, 251, 1); /* Apply background color */
+  padding: 30px 0; /* Adjust padding if necessary */
+}
+
+.faq-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.faq-content {
+  max-width: 80%;
+}
+
+.faq-toggle {
+  text-align: right;
+}
+
+.toggle-btn {
+  font-size: 24px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #007BFF;
+}
+
+.toggle-btn:hover {
+  color: #0056b3;
+}
